@@ -29,14 +29,12 @@ function filterDogOwners(users) {
 }
 filterDogOwners(users);
 
-// ;
-// for (let i = 0; i < users.length; i++) {
-//   console.log(dogOwners[i].name);
-// }
+console.log("---------Adults---------");
 
-// console.log("---------Adults---------");
-
-// let adults = users.filter((user) => user.age >= 18);
-// for (let i = 0; i < users.length; i++) {
-//   console.log(adults[i].name);
-// }
+function filterAdults(users) {
+  let adults = users.filter((user) => user.age >= 18);
+  for (let i = 0; i < adults.length; i++) {
+    console.log(adults[i].name);
+  }
+}
+filterAdults(users);
