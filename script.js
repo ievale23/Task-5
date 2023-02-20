@@ -23,9 +23,11 @@ const users = [
 console.log("---------Dog Owners---------");
 function filterDogOwners(users) {
   let dogOwners = users.filter((user) => user.hasDog == true);
-  console.log(dogOwners.name);
+  for (let i = 0; i < dogOwners.length; i++) {
+    console.log(dogOwners[i].name);
+  }
 }
-filterDogOwners();
+filterDogOwners(users);
 
 // ;
 // for (let i = 0; i < users.length; i++) {
