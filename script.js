@@ -20,12 +20,21 @@ const users = [
   { id: "9", name: "Daniel Cane", age: 51, hasDog: true },
 ];
 
-let dogOwners = users.filter((user) => user.hasDog == true);
-for (let i = 0; i < users.length; i++) {
-  console.log(dogOwners[i].name);
+console.log("---------Dog Owners---------");
+function filterDogOwners(users) {
+  let dogOwners = users.filter((user) => user.hasDog == true);
+  console.log(dogOwners.name);
 }
+filterDogOwners();
 
-let adults = users.filter((user) => user.age >= 18);
-for (let i = 0; i < users.length; i++) {
-  console.log(adults[i].name);
-}
+// ;
+// for (let i = 0; i < users.length; i++) {
+//   console.log(dogOwners[i].name);
+// }
+
+// console.log("---------Adults---------");
+
+// let adults = users.filter((user) => user.age >= 18);
+// for (let i = 0; i < users.length; i++) {
+//   console.log(adults[i].name);
+// }
