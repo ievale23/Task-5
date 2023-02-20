@@ -24,3 +24,8 @@ let dogOwners = users.filter((user) => user.hasDog == true);
 for (let i = 0; i < users.length; i++) {
   console.log(dogOwners[i].name);
 }
+
+let adults = users.filter((user) => user.age >= 18);
+for (let i = 0; i < users.length; i++) {
+  console.log(adults[i].name);
+}
